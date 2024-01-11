@@ -49,8 +49,13 @@ export default defineType({
       title: 'Body',
       type: 'blockContent',
     }),
+    defineField({
+      name: 'link',
+      title: 'Link',
+      type: 'linkCustom',
+    }),
   ],
-
+  
   preview: {
     select: {
       title: 'title',
@@ -63,3 +68,5 @@ export default defineType({
     },
   },
 })
+
+
