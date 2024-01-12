@@ -24,44 +24,44 @@ export default defineType({
       
       of: [
         
+        // defineArrayMember({
+        //   name: 'pageTemp',
+        //   type: 'pageTemp',
+        //   title: 'PageBuilder',
+        // }),
+        // defineArrayMember({
+        //   name: 'homeTemp',
+        //   type: 'homeTemp',
+        //   title: 'Home',
+        // }),
+        // defineArrayMember({
+        //   name: 'aboutTemp',
+        //   type: 'aboutTemp',
+        //   title: 'About',
+        // }),
         defineArrayMember({
-          name: 'pageTemp',
-          type: 'pageTemp',
-          title: 'PageBuilder',
+          name: 'hero',
+          type: 'hero',
         }),
         defineArrayMember({
-          name: 'homeTemp',
-          type: 'homeTemp',
-          title: 'Home',
+          name: 'textWithIllustration',
+          type: 'textWithIllustration',
         }),
         defineArrayMember({
-          name: 'aboutTemp',
-          type: 'aboutTemp',
-          title: 'About',
+          name: 'gallery',
+          type: 'gallery',
         }),
-        // defineArrayMember({
-        //   name: 'hero',
-        //   type: 'hero',
-        // }),
-        // defineArrayMember({
-        //   name: 'textWithIllustration',
-        //   type: 'textWithIllustration',
-        // }),
-        // defineArrayMember({
-        //   name: 'gallery',
-        //   type: 'gallery',
-        // }),
-        // defineArrayMember({
-        //   name: 'form',
-        //   type: 'form',
-        // }),
-        // defineArrayMember({
-        //   name: 'video',
-        //   type: 'video',
-        // }),
+        defineArrayMember({
+          name: 'form',
+          type: 'form',
+        }),
+        defineArrayMember({
+          name: 'video',
+          type: 'video',
+        }),
 
       ],
-      validation: Rule => Rule.required().max(1).error('Solo puede seleccionar un template por página'),
+      // validation: Rule => Rule.required().max(1).error('Solo puede seleccionar un template por página'),
       
     }),
    

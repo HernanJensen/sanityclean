@@ -35,7 +35,25 @@ export const structure = (S, context) =>
         ),
 
       S.divider(),
-
+      
+      S.listItem()
+        .title('Home')
+        .child(
+          S.document()
+            .id('home')
+            .schemaType('home')
+            .documentId('home')
+            .title('Home')
+        ),
+      S.listItem()
+        .title('About')
+        .child(
+          S.document()
+            .id('about')
+            .schemaType('about')
+            .documentId('about')
+            .title('About')
+        ),
       S.listItem()
         .title('Pages')
         .child(
@@ -56,20 +74,6 @@ export const structure = (S, context) =>
                 //     .title('SEO'),
                 // ])   
             )
-          // S.list()
-          //   .title('Pages')
-          //   .items([
-          //     S.listItem()
-          //       .title('Home')
-          //       .child(
-          //         S.document()
-          //           .id('home')
-          //           .schemaType('home')
-          //           .documentId('home')
-          //           .title('Home')
-          //       ),
-   
-          
         ),
       S.listItem()
         .title('Posts')
