@@ -8,6 +8,11 @@ export default defineType({
   __experimental_actions: ["update", "publish"],
   fields: [
     defineField({
+      name: 'image',
+      title: 'Logo',
+      type: 'image',
+    }), 
+    defineField({
       name: 'links',
       type: 'object',
       title: 'Links',

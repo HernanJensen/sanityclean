@@ -23,7 +23,7 @@ export default defineConfig({
   },
  
   document: {
-    // la funcion productionURl es para que cuando se haga click en el boton de preview en el panel de sanity, se abra la pagina en el navegador
+    // la funcion productionURl es para que cuando se haga click en el boton de preview en el panel de sanity, se abra la pagina en el navegador (la preview vamos)
     productionUrl: async (prev, {document}) => {
       
       if(document._type == 'post' && document.slug){
