@@ -16,6 +16,7 @@ import {heroType} from './fieldTypes/heroType'
 import {imageGalleryType} from './fieldTypes/imageGalleryType'
 import {textWithIllustrationType} from './fieldTypes/textWithIllustrationType'
 import {videoType} from './fieldTypes/videoType'
+import {SEOfields} from './fieldTypes/SEOfields'
 
 // templates
 import {homeTemp} from './templates/homeTemp'
@@ -40,6 +41,7 @@ export const schemaTypes = [
   imageGalleryType,
   formType,
   videoType,
+  SEOfields,
 
   homeTemp,
   pageTemp,

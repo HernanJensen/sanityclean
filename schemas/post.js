@@ -4,6 +4,13 @@ export default defineType({
   name: 'post',
   title: 'Post',
   type: 'document',
+  fieldsets: [
+    {
+      name: 'seo',
+      title: 'SEO & Social sharing',
+      options: {collapsible: true, collapsed: true},
+    },
+  ],
   fields: [
     defineField({
       name: 'title',
@@ -53,6 +60,11 @@ export default defineType({
       name: 'link',
       title: 'Link',
       type: 'linkCustom',
+    }),
+    defineField({
+      name: 'SEO',
+      type: 'SEO_fields',
+      fieldset: 'seo'
     }),
   ],
   

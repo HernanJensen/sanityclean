@@ -6,6 +6,13 @@ export default defineType({
   name: 'page',
   type: 'document',
   title: 'Page',
+  fieldsets: [
+    {
+      name: 'seo',
+      title: 'SEO & Social sharing',
+      options: {collapsible: true, collapsed: true},
+    },
+  ],
   fields: [
     defineField({name: 'title', type: 'string'}),
     defineField({
@@ -64,6 +71,10 @@ export default defineType({
       // validation: Rule => Rule.required().max(1).error('Solo puede seleccionar un template por página'),
       
     }),
-   
+    defineField({
+      name: 'SEO',
+      type: 'SEO_fields',
+      fieldset: 'seo',
+    }),
   ],
 })

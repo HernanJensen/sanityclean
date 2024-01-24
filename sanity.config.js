@@ -21,13 +21,14 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
   },
+
  
   document: {
     // la funcion productionURl es para que cuando se haga click en el boton de preview en el panel de sanity, se abra la pagina en el navegador (la preview vamos)
     productionUrl: async (prev, {document}) => {
       
       if(document._type == 'post' && document.slug){
-        return `https://csskillertest.sanity.studio/structure/post/${document.slug.current}`
+        return `https://test.csskiller.es/santest/${document.slug.current}`
       }
 
       return prev

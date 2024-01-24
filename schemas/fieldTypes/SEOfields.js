@@ -1,11 +1,12 @@
-import {defineType, defineField} from 'sanity'
 
-export default defineType({
+import {defineField, defineType} from 'sanity'
 
-  name: 'siteSettings',
-  title: 'Site Settings',
-  type: 'document',
-  __experimental_actions: ["update", "publish"],
+
+export const SEOfields = defineType({
+  name: 'SEO_fields',
+  type: 'object',
+  title: 'SEO & Social sharing',
+  
   fields: [
     defineField({
       name: 'title',
@@ -42,5 +43,5 @@ export default defineType({
         },
       ],
     }),
-  ]
-});
+  ],
+})

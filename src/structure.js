@@ -1,5 +1,3 @@
-// import {SEOPane} from 'sanity-plugin-seo-pane'
-
 
 //Aqui se definen los tipos de documentos que se van a mostrar en el panel de Sanity
 
@@ -63,16 +61,6 @@ export const structure = (S, context) =>
               S.document()
                 .documentId(documentId)
                 .schemaType('page')
-                // .views([
-                //   S.view
-                //     .component(SEOPane)
-                //     .options({
-                //       keywords: `seo.keywords`,
-                //       synonyms: `seo.synonyms`,
-                //       url: (documentId) => resolveProductionUrl(documentId),  
-                //     })
-                //     .title('SEO'),
-                // ])   
             )
         ),
       S.listItem()
@@ -105,17 +93,3 @@ export const structure = (S, context) =>
       ),
     ],)
     
-
-
-
-export const resolveProductionUrl = (document) => {
-
-  // if(document._type == 'post'){
-
-  //   return `http://localhost:3333/structure/posts/${document.slug.current}`
-  // }
-  // if(document._type == 'page'){
-  //   return `http://localhost:3333/structure/pages/${document.slug.current}`
-  // }
-
-}
