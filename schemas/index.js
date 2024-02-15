@@ -7,7 +7,7 @@ import author from './author'
 import pageType from './pageType'
 import header from './header'
 import homePage from './homePage'
-import aboutPage from './aboutPage'
+import aboutPage from './aboutPage' 
 
 // field types
 import {linkType} from './fieldTypes/linkType'
